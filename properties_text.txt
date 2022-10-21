@@ -1,0 +1,14 @@
+spring.datasource.url=jdbc:postgresql://localhost:5432/ongiuaky_db
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.datasource.username=postgres
+spring.datasource.password=admin
+spring.jpa.show-sql=true
+spring.devtools.add-properties=true
+spring.jpa.properties.hibernate.current_session_context_class=org.springframework.orm.hibernate5.SpringSessionContext
+spring.jpa.properties.hibernate.id.new_generator_mappings=true
+spring.jpa.hibernate.ddl-auto=update
+
+spring.activemq.packages.trust-all=true
+spring.jms.pub-sub-domain=true
+#khi làm docker file build thì commandline lại cái broker url kẻo lỗi
+spring.activemq.broker-url=tcp://localhost:61616 
